@@ -6,12 +6,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
+        int kilometri;
+        int litri;
         try {
             System.out.println("Inserisci il numero di KM:");
-            int kilometri = Integer.parseInt(scanner.nextLine());
+            kilometri = Integer.parseInt(scanner.nextLine());
+
             System.out.println("Inserisci il numero di litri consumati:");
-            int litri = Integer.parseInt(scanner.nextLine());
+            litri = Integer.parseInt(scanner.nextLine());
+
 
             System.out.println(kilometri / litri);
         } catch (NumberFormatException e) {
@@ -22,6 +25,9 @@ public class Main {
         } catch (ArithmeticException e) {
             System.err.println(e.getMessage());
             System.err.println("Non si può dividere per zero");
+
+        } finally {
+            scanner.close();
         }
     }
 

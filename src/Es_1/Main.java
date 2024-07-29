@@ -28,6 +28,8 @@ public class Main {
                 System.err.println(e.getMessage());
                 System.err.println("Il valore non è compreso tra 1 e 10. Riprova");
                 i--;
+            } finally {
+                scanner.close();
             }
 
 
