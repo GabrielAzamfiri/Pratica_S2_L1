@@ -16,7 +16,7 @@ public class Main {
             litri = Integer.parseInt(scanner.nextLine());
 
 
-            System.out.println(kilometri / litri);
+            System.out.println("kilometri/litri: " + (kilometri / litri));
         } catch (NumberFormatException e) {
             System.err.println(e.getMessage());
             System.err.println("Inserire un valore numerico e non una stringa");

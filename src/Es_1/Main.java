@@ -20,7 +20,6 @@ public class Main {
                 } else {
                     numeri[i] = numUtente;
                     System.out.println(Arrays.toString(numeri));
-
                 }
                 if (numUtente == 0) break;
                 if (i == 4) i = -1;
@@ -28,13 +27,8 @@ public class Main {
                 System.err.println(e.getMessage());
                 System.err.println("Il valore non è compreso tra 1 e 10. Riprova");
                 i--;
-            } finally {
-                scanner.close();
             }
-
-
         }
-
-
+        scanner.close();
     }
 }
